@@ -34,30 +34,38 @@ Make sure you have the following installed:
 git clone https://github.com/Naveen052004/ComicBookManagement.git
 cd ComicBookManagement
 ```
-Backend Setup
-Navigate to the backend directory:
+### Backend Setup
 
-cd server
-Install dependencies:
+#### Navigate to the backend directory:
+```bash
+    cd server
+```
+#### Install dependencies:
+```bash
 npm install
-
+```
 Start the backend server:
-
+```bash
 npm run devStart
-
-Frontend Setup
-Navigate to the frontend directory:
-
+```
+### Frontend Setup
+#### Navigate to the frontend directory:
+```bash
 cd ../client
+```
 
-Install dependencies:
-
+#### Install dependencies:
+```bash
 npm install
-Start the frontend application:
+```
+#### Start the frontend application:
+```bash
 npm start
+```
+### Usage
 
-Usage
-Access the backend API at http://localhost:5000/api/books
-Access the frontend application at http://localhost:3000
-Postman Collection
-A Postman collection for testing the API is included. You can import it into Postman to test the endpoints.
+- Access the backend API at http://localhost:5000/api/books
+- Access the frontend application at http://localhost:3000
+
+### Postman Collection
+- A Postman collection for testing the API is included. You can import it into Postman to test the endpoints.

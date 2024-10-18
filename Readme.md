@@ -38,7 +38,7 @@ cd ComicBookManagement
 
 #### Navigate to the backend directory:
 ```bash
-    cd server
+cd server
 ```
 #### Install dependencies:
 ```bash

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css'; // Ensure this CSS handles the full-screen overlay
+import './Modal.css';
 
 const Modal = ({ isOpen, onClose, children }) => {
     if (!isOpen) return null;

@@ -1,6 +1,6 @@
 // src/BookForm.js
 import React, { useState } from 'react';
-import './BookForm.css'; // Importing CSS for the form
+import './BookForm.css';
 
 const BookForm = ({onClose}) => {
   const [formData, setFormData] = useState({
@@ -29,7 +29,6 @@ const BookForm = ({onClose}) => {
             const data = await response.json();
             console.log('Book added:', data);
             onClose();
-            // Optionally, reset the form or show a success message
         } else {
             throw new Error('Failed to add book');
         }

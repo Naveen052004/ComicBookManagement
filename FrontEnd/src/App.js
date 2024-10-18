@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import BookForm from './BookForm';
-import BookList from './BookList';
+import BookList from './components/BookList';
 
 function App() {
   return (

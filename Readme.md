@@ -33,6 +33,7 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/Naveen052004/ComicBookManagement.git
 cd ComicBookManagement
+```
 Backend Setup
 Navigate to the backend directory:
 

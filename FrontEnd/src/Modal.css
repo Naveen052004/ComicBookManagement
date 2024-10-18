@@ -1,0 +1,77 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above other content */
+    backdrop-filter: blur(5px); /* Blur effect */
+}
+
+.modal-content {
+    background: white;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 12px; /* More rounded corners */
+    width: 600px; /* Increased width */
+    max-width: 90%; /* Responsive max-width for smaller screens */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333; /* Darker close button */
+    cursor: pointer;
+}
+
+.edit-book-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+.edit-book-form input,
+.edit-book-form select,
+.edit-book-form textarea {
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 16px; /* Larger font size */
+}
+
+.edit-book-form textarea {
+    resize: none; /* Prevent resizing */
+    height: 100px; /* Set a fixed height */
+}
+
+.edit-book-form button {
+    padding: 10px; /* Padding inside buttons */
+    background-color: #007bff; /* Primary color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Larger font size */
+    margin-right: 10px; /* Space between buttons */
+}
+
+.edit-book-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.edit-book-form button.cancel {
+    background-color: #ccc; /* Cancel button color */
+}
+
+.edit-book-form button.cancel:hover {
+    background-color: #aaa; /* Darker shade on hover */
+}

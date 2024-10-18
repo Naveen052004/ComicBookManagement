@@ -1,0 +1,109 @@
+/* src/BookList.css */
+
+.book-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 0 0 5px;
+    color: #007BFF; /* Highlight book names */
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+.edit-button, .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #FFC107; /* Yellow */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #FFA000; /* Darker Yellow */
+}
+
+.delete-button {
+    background-color: #DC3545; /* Red */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #C82333; /* Darker Red */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Center the pagination */
+    align-items: center;
+    margin: 20px 0; /* Margin above and below */
+}
+
+.pagination button {
+    padding: 10px 15px; /* Padding for buttons */
+    margin: 0 5px; /* Space between buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.pagination button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+.pagination span {
+    margin: 0 10px; /* Space around page number */
+    font-size: 16px; /* Font size for page info */
+    font-weight: bold; /* Make the page info stand out */
+}

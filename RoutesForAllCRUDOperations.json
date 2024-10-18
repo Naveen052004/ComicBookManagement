@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "41afbbca-89da-4726-861b-a4e50cc51179",
+		"name": "CRUD Operations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28040483"
+	},
+	"item": [
+		{
+			"name": "addDataToDBBulk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"_id\": \"67111e7017cdaf08298cfe9a\",\r\n        \"bookName\": \"The Great Gatsby\",\r\n        \"authorName\": \"F. Scott Fitzgerald\",\r\n        \"yearOfPublication\": \"1925\",\r\n        \"price\": 10.99,\r\n        \"discount\": 0.1,\r\n        \"numberOfPages\": 218,\r\n        \"condition\": \"used\",\r\n        \"description\": \"A novel set in the Roaring Twenties, exploring themes of wealth and love.\"\r\n    },\r\n    {\r\n        \"_id\": \"67111e7017cdaf08298cfe9b\",\r\n        \"bookName\": \"To Kill a Mockingbird\",\r\n        \"authorName\": \"Harper Lee\",\r\n        \"yearOfPublication\": \"1960\",\r\n        \"price\": 7.99,\r\n        \"discount\": 0.05,\r\n        \"numberOfPages\": 281,\r\n        \"condition\": \"new\",\r\n        \"description\": \"A novel about the serious issues of rape and racial inequality.\"\r\n    },\r\n    {\r\n        \"_id\": \"67111e7017cdaf08298cfe9c\",\r\n        \"bookName\": \"1984\",\r\n        \"authorName\": \"George Orwell\",\r\n        \"yearOfPublication\": \"1949\",\r\n        \"price\": 8.5,\r\n        \"discount\": null,\r\n        \"numberOfPages\": 328,\r\n        \"condition\": \"new\",\r\n        \"description\": \"A dystopian social science fiction novel and cautionary tale about the dangers of totalitarianism.\"\r\n    },\r\n    {\r\n        \"_id\": \"67111e7017cdaf08298cfe9d\",\r\n        \"bookName\": \"The Catcher in the Rye\",\r\n        \"authorName\": \"J.D. Salinger\",\r\n        \"yearOfPublication\": \"1951\",\r\n        \"price\": 9.99,\r\n        \"discount\": 0.15,\r\n        \"numberOfPages\": 277,\r\n        \"condition\": \"used\",\r\n        \"description\": \"A story about teenage alienation and loss of innocence.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019855\",\r\n        \"bookName\": \"Amazing Spider-Man\",\r\n        \"authorName\": \"Stan Lee\",\r\n        \"yearOfPublication\": \"1985\",\r\n        \"price\": 19.99,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Amazing Spider-Man is a comic book by Stan Lee, published in 1985.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019856\",\r\n        \"bookName\": \"Batman: Year One\",\r\n        \"authorName\": \"Frank Miller\",\r\n        \"yearOfPublication\": \"1987\",\r\n        \"price\": 14.99,\r\n        \"condition\": \"used\",\r\n        \"description\": \"Batman: Year One is a comic book by Frank Miller, published in 1987.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019857\",\r\n        \"bookName\": \"Watchmen\",\r\n        \"authorName\": \"Alan Moore\",\r\n        \"yearOfPublication\": \"1986\",\r\n        \"price\": 25,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Watchmen is a comic book by Alan Moore, published in 1986.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019858\",\r\n        \"bookName\": \"The Dark Knight Returns\",\r\n        \"authorName\": \"Frank Miller\",\r\n        \"yearOfPublication\": \"1986\",\r\n        \"price\": 19.5,\r\n        \"condition\": \"used\",\r\n        \"description\": \"The Dark Knight Returns is a comic book by Frank Miller, published in 1986.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019859\",\r\n        \"bookName\": \"X-Men: Days of Future Past\",\r\n        \"authorName\": \"Chris Claremont\",\r\n        \"yearOfPublication\": \"1981\",\r\n        \"price\": 15.75,\r\n        \"condition\": \"new\",\r\n        \"description\": \"X-Men: Days of Future Past is a comic book by Chris Claremont, published in 1981.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c01985a\",\r\n        \"bookName\": \"Saga\",\r\n        \"authorName\": \"Brian K. Vaughan\",\r\n        \"yearOfPublication\": \"2012\",\r\n        \"price\": 9.99,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Saga is a comic book by Brian K. Vaughan, published in 2012.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c01985b\",\r\n        \"bookName\": \"Y: The Last Man\",\r\n        \"authorName\": \"Brian K. Vaughan\",\r\n        \"yearOfPublication\": \"2002\",\r\n        \"price\": 12.99,\r\n        \"condition\": \"used\",\r\n        \"description\": \"Y: The Last Man is a comic book by Brian K. Vaughan, published in 2002.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c01985c\",\r\n        \"bookName\": \"Sandman\",\r\n        \"authorName\": \"Neil Gaiman\",\r\n        \"yearOfPublication\": \"1989\",\r\n        \"price\": 18.5,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Sandman is a comic book by Neil Gaiman, published in 1989.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c01985d\",\r\n        \"bookName\": \"Infinity Gauntlet\",\r\n        \"authorName\": \"Jim Starlin\",\r\n        \"yearOfPublication\": \"1991\",\r\n        \"price\": 20,\r\n        \"condition\": \"used\",\r\n        \"description\": \"Infinity Gauntlet is a comic book by Jim Starlin, published in 1991.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c01985e\",\r\n        \"bookName\": \"Civil War\",\r\n        \"authorName\": \"Mark Millar\",\r\n        \"yearOfPublication\": \"2006\",\r\n        \"price\": 16.5,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Civil War is a comic book by Mark Millar, published in 2006.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c01985f\",\r\n        \"bookName\": \"The Walking Dead\",\r\n        \"authorName\": \"Robert Kirkman\",\r\n        \"yearOfPublication\": \"2003\",\r\n        \"price\": 22.5,\r\n        \"condition\": \"used\",\r\n        \"description\": \"The Walking Dead is a comic book by Robert Kirkman, published in 2003.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019860\",\r\n        \"bookName\": \"Moon Knight\",\r\n        \"authorName\": \"Jeff Lemire\",\r\n        \"yearOfPublication\": \"2016\",\r\n        \"price\": 10,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Moon Knight is a comic book by Jeff Lemire, published in 2016.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019861\",\r\n        \"bookName\": \"Green Lantern: Rebirth\",\r\n        \"authorName\": \"Geoff Johns\",\r\n        \"yearOfPublication\": \"2004\",\r\n        \"price\": 15,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Green Lantern: Rebirth is a comic book by Geoff Johns, published in 2004.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019862\",\r\n        \"bookName\": \"Black Panther: A Nation Under Our Feet\",\r\n        \"authorName\": \"Ta-Nehisi Coates\",\r\n        \"yearOfPublication\": \"2016\",\r\n        \"price\": 17,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Black Panther: A Nation Under Our Feet is a comic book by Ta-Nehisi Coates, published in 2016.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019863\",\r\n        \"bookName\": \"Ms. Marvel\",\r\n        \"authorName\": \"G. Willow Wilson\",\r\n        \"yearOfPublication\": \"2014\",\r\n        \"price\": 13.5,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Ms. Marvel is a comic book by G. Willow Wilson, published in 2014.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019864\",\r\n        \"bookName\": \"Daredevil: Born Again\",\r\n        \"authorName\": \"Frank Miller\",\r\n        \"yearOfPublication\": \"1986\",\r\n        \"price\": 18.99,\r\n        \"condition\": \"used\",\r\n        \"description\": \"Daredevil: Born Again is a comic book by Frank Miller, published in 1986.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019865\",\r\n        \"bookName\": \"Hellboy: Seed of Destruction\",\r\n        \"authorName\": \"Mike Mignola\",\r\n        \"yearOfPublication\": \"1994\",\r\n        \"price\": 15,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Hellboy: Seed of Destruction is a comic book by Mike Mignola, published in 1994.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019866\",\r\n        \"bookName\": \"Fantastic Four: The Night In Ominous\",\r\n        \"authorName\": \"Mark Waid\",\r\n        \"yearOfPublication\": \"2003\",\r\n        \"price\": 14,\r\n        \"condition\": \"used\",\r\n        \"description\": \"Fantastic Four: The Night In Ominous is a comic book by Mark Waid, published in 2003.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019867\",\r\n        \"bookName\": \"Wonder Woman: The Hiketeia\",\r\n        \"authorName\": \"Greg Rucka\",\r\n        \"yearOfPublication\": \"2002\",\r\n        \"price\": 16.25,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Wonder Woman: The Hiketeia is a comic book by Greg Rucka, published in 2002.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019868\",\r\n        \"bookName\": \"The Boys\",\r\n        \"authorName\": \"Garth Ennis\",\r\n        \"yearOfPublication\": \"2006\",\r\n        \"price\": 22,\r\n        \"condition\": \"used\",\r\n        \"description\": \"The Boys is a comic book by Garth Ennis, published in 2006.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c019869\",\r\n        \"bookName\": \"Locke & Key\",\r\n        \"authorName\": \"Joe Hill\",\r\n        \"yearOfPublication\": \"2008\",\r\n        \"price\": 18,\r\n        \"condition\": \"new\",\r\n        \"description\": \"Locke & Key is a comic book by Joe Hill, published in 2008.\"\r\n    },\r\n    {\r\n        \"_id\": \"6711e09ed6fde8988c01986a\",\r\n        \"bookName\": \"Ghost Rider\",\r\n        \"authorName\": \"Garth Ennis\",\r\n        \"yearOfPublication\": \"2007\",\r\n        \"price\": 19.99,\r\n        \"condition\": \"used\",\r\n        \"description\": \"Ghost Rider is a comic book by Garth Ennis, published in 2007.\"\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/booksBulk"
+			},
+			"response": []
+		},
+		{
+			"name": "addDataToDBIndividual",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\": \"67111e7017cdaf04298cfe9a\",\r\n  \"bookName\": \"The Great Gatsby\",\r\n  \"authorName\": \"F. Scott Fitzgerald\",\r\n  \"yearOfPublication\": 1925,\r\n  \"price\": 10.99,\r\n  \"discount\": 0.1,\r\n  \"numberOfPages\": 218,\r\n  \"condition\": \"used\",\r\n  \"description\": \"A novel set in the Roaring Twenties, exploring themes of wealth and love.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/books"
+			},
+			"response": []
+		},
+		{
+			"name": "fetchBookDetailsDefault",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "fetchBookDetailsWithLimit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books?limit=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteRecord",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/api/booksDelete/67111e7017cdaf08298cfe9c"
+			},
+			"response": []
+		},
+		{
+			"name": "editRecord",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"authorName\":\"Naveen\",\r\n    \"price\":10,\r\n    \"condition\":\"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/booksUpdate/67111e7017cdaf08298cfe9d"
+			},
+			"response": []
+		},
+		{
+			"name": "booksWithMaxPrice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books?limit=100&price=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "price",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sortWithPriceAscending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books?sort=price&order=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "price"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sortWithPriceDescending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books?sort=price&order=des",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "price"
+						},
+						{
+							"key": "order",
+							"value": "des"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterByAuthorName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books?authorName=ga",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "authorName",
+							"value": "ga"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paginationResults",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/books?limit=2&page=1&sort=price&order=des",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "sort",
+							"value": "price"
+						},
+						{
+							"key": "order",
+							"value": "des"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "individualRecordDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/api/books/67111e7017cdaf08298cfe9d"
+			},
+			"response": []
+		}
+	]
+}
